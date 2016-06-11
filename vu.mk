@@ -16,10 +16,10 @@ PRODUCT_PACKAGES += \
     Gello
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/vu/config/common_full_tablet_wifionly.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/vu/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/flounder/aosp_flounder.mk)
@@ -51,6 +51,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_ID=MOB30G
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_flounder
+PRODUCT_NAME := vu_flounder
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 9
